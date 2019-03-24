@@ -1,6 +1,6 @@
 package sample;
 
-import javafx.animation.KeyFrame;
+import javafx.animation.KeyFrame; //Użyto JavaFX pobranego osobno, w związku z problemami
 import javafx.animation.KeyValue;
 import javafx.animation.Timeline;
 import javafx.application.Application;
@@ -31,7 +31,7 @@ public class Main extends Application {
     private Pane root = new Pane();
     private Rectangle border;
 
-    private Parent createContent(){
+    private Parent createContent(){ //Rysowanie okna
         root.setPrefSize(600,600);
 
         for (int i=0; i<3;i++){
