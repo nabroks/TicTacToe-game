@@ -71,15 +71,15 @@ public class Main extends Application {
             this.tiles = tiles;
         }
 
-        private boolean isComplete(){
+        private boolean isComplete(){ //Sprawdzenie czy 3 znaki znajdują się w lini
             if (tiles[0].getValue().isEmpty())
                 return false;
             return tiles[0].getValue().equals(tiles[1].getValue())
                     && tiles[0].getValue().equals(tiles[2].getValue());
         }
     }
-
-    private void checkState(){
+//todo Sprawdzić działanie animacji wygranej - nie odtwarza się
+    private void checkState(){ // Animacja wygranej
         for (Combo combo: combos){
             if (combo.isComplete()){
                 playable = false;
@@ -134,7 +134,7 @@ public class Main extends Application {
                 }
             });
         }
-
+// Rysowanie znaków
         private void drawX(){
             text.setText("X");
             turnX = false;
