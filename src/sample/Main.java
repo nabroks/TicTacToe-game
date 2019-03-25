@@ -134,7 +134,7 @@ public class Main extends Application {
                 }
             });
         }
-// Rysowanie znaków
+// Rysowanie znaków z biblitek FX
         private void drawX(){
             text.setText("X");
             turnX = false;
