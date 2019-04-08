@@ -78,7 +78,6 @@ public class Main extends Application {
                     && tiles[0].getValue().equals(tiles[2].getValue());
         }
     }
-//todo Sprawdzić działanie animacji wygranej - nie odtwarza się
     private void checkState(){ // Animacja wygranej
         for (Combo combo: combos){
             if (combo.isComplete()){
